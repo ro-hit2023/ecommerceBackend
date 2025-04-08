@@ -2,16 +2,16 @@ import express, { ErrorRequestHandler, NextFunction, Request, Response } from "e
 import "express-async-errors"; //this helps to handle any unhandled Promise Rejcetion from controller and transfer them to global error handler for showing proper response on postman
 import env from "dotenv";
 import mongoose from "mongoose";
-import { CustomError } from "./utils/error";
+import { CustomError } from "./src/utils/error";
 import { StatusCodes } from "http-status-codes";
-import adminRoute from './routers/admin'
+import adminRoute from './src/routers/admin'
 import status from "express-status-monitor"
-import apiRoute from "./routers/index"
-import { validatorJoiSchema_query } from "./utils/schemaValidators";
-import { uploadImage_Schema } from "./Validators/commonValidator";
-import { fileSizeCheck, upload } from "./utils/multer";
+import apiRoute from "./src/routers/index"
+import { validatorJoiSchema_query } from "./src/utils/schemaValidators";
+import { uploadImage_Schema } from "./src/Validators/commonValidator";
+import { fileSizeCheck, upload } from "./src/utils/multer";
 import multer from "multer";
-import messages from "./custome_messages";
+import messages from "./src/custome_messages";
 import path from "path";
 // import fs from "node:fs"
 

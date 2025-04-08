@@ -2,9 +2,9 @@
   "name": "ecommerce-back-end",
   "version": "1.0.0",
   "description": "This project is a clone of flipkart backend",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start:dev": "nodemon src/server.ts"
+    "start:dev": "nodemon server.ts"
   },
   "author": "",
   "license": "ISC",
